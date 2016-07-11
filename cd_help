@@ -1,0 +1,85 @@
+url = "https://github.com/GeospatialPython/Learn/raw/master/hancock.zip"
+
+urllib.request.urlretrieve(url, fileName) 
+('hancock.zip', "httplib.HTTPMessage instance at 0x00CAD378")
+
+ftp.retrbinary("RETR" + fileName, out.write)
+
+python shell current cd
+import os
+os.getcwd()
+
+python list modules
+help('modules')
+
+python3 -m pip install http://git.io/vOER9
+
+#python shell cd
+import os
+os.chdir('/Users/davidleifer/Desktop/LearnPython/all')
+
+#fucking python3 install modules
+python3 -m pip install numpy
+
+terminal cd
+cd /Users/davidleifer/Downloads/dbfpy3-master
+
+change owner
+chown /Users/davidleifer/Downloads/beautifulsoup4-4.4.1
+
+ls
+lists cd
+
+download from the internet
+curl https://blahblahblah
+
+access online resource and download to current directory
+> > > import urllib.request 
+> > > import urllib.parse 
+> > > import urllib.error 
+> > > url = "https:// github.com/ GeospatialPython/ Learn/ raw/ master/ hancock.zip" 
+> > > fileName = "hancock.zip" 
+> > > urllib.request.urlretrieve( url, fileName) 
+(' hancock.zip', < httplib.HTTPMessage instance at 0x00CAD378 >)
+
+from bs4 import BeautifulSoup
+
+dart = urllib.request.urlopen("ftp://" + server + "/" + dir + "/" + fileName)
+
+from dbfpy3 import dbf
+db = dbf.Dbf("GIS_CensusTract_poly.dbf")
+
+gdal_array.SaveArray(band1, "band1.jpg", format="JPEG")
+
+
+
+> > > import utm 
+> > > y = 479747.0453210057 
+> > > x = 5377685.825323031 
+> > > zone = 32 
+> > > band = 'U' 
+> > > print(utm.to_latlon(y, x, zone, band)) > > > (48.55199390882121, 8.725555729071763)
+
+
+fieldName = [item[0] for item in r.fields[1:]]
+name10 = fieldNames.index("NAME10")
+
+r = shapefile.Reader("NYC_MUSEUMS_GEO")
+
+
+import shapefile
+>>> r = shapefile.Reader("MS_UrbanAnC10")
+>>> w = shapefile.Writer(r.shapeType)
+>>> w.fields = list(r.fields)
+>>> selection = []
+>>> for rec in enumerate(r.records()):
+...     if rec[1][14] < 5000:
+...             selection.append(rec)
+... 
+>>> for rec in selection:
+...     w._shapes.append(r.shape(rec[0]))
+...     w.records.append(rec[1])
+... 
+>>> w.save("MS_Urban_Subset")
+
+
